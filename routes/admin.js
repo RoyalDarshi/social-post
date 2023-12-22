@@ -12,6 +12,6 @@ router.get("/get-post",adminController.getPosts)
 
 router.post("/add-comment",adminController.createComment);
 
-router.post("/get-comment",adminController.getComments)
+router.get("/get-comment/:id",adminController.getComments)
 
 module.exports=router;

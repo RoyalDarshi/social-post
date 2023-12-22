@@ -10,7 +10,7 @@ const post=sequelize.define("post",{
         primaryKey:true
     },
     link:{
-        type:Sequelize.STRING,
+        type:Sequelize.TEXT,
         allowNull: false
     },
     description:{

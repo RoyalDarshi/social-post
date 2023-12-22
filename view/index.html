@@ -30,13 +30,16 @@
         }
         a:hover{
             cursor: pointer;
-            text-decoration: underline;
+            text-decoration-line: underline;
         }
         h3 {
             font-size: 1rem; /* Adjust the font size for the username */
         }
         .comment-input {
             width: 100%;
+        }
+        ul{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -47,14 +50,14 @@
         <div class="col-md-6 offset-md-3">
             <form>
                 <div class="form-group">
-                    <label for="postlink">Post Link</label>
-                    <input type="text" class="form-control" id="postlink" placeholder="Enter post name" required>
+                    <label for="post-link">Post Link</label>
+                    <input type="text" class="form-control" id="post-link" placeholder="Enter post name" required>
                 </div>
                 <div class="form-group">
-                    <label for="postdesc">Post Description</label>
-                    <textarea class="form-control" id="postdesc" rows="3" placeholder="List the pros of the post"></textarea>
+                    <label for="post-desc">Post Description</label>
+                    <textarea class="form-control" id="post-desc" rows="3" placeholder="List the pros of the post"></textarea>
                 </div>
-                <button onclick="createPost(event)" type="submit" class="btn btn-primary">Create Post</button>
+                <button onclick="createPost(event)" type="submit" class="btn btn-primary w-100">Create Post</button>
             </form>
             <!-- Display Reviews -->
             <div id="postContainer" class="mt-4">
